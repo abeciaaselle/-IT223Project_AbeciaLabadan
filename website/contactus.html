@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SecureTech | Contact Us</title>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <a href="index.html"><h2 class="logo">SecureTech</h2></a>
+            </div>
+
+            <div class="nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="contact">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us - we're here to help!</p>
+            </div>
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Cagayan de Oro City, <br> Misamis Oriental, <br>9000</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>09972615682</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>securetech@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <form id="contactForm">
+                        <h2>Send us a message</h2>
+                        <div class="inputBox">
+                            <input type="text" name="fullName" required="required">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="email" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea required="required"></textarea>
+                            <span>Type your Message...</span>
+                        </div>
+                        <div class="inputBox">
+                            <button id="button" onclick="myFunction(event)">Submit</button>
+                        </div>
+                    </form>
+                    <div class="confirmation-box" id="confirmationBox">
+                        <p id="confirmationText"></p>
+                    </div>
+                    <script>
+                        function myFunction(event) {
+                            event.preventDefault(); // Prevent form submission
+
+                            var element = document.getElementById("button");
+                            element.innerHTML = 'Submitted';
+                            element.style.backgroundColor = 'white';
+
+                            // Retrieve the values from the input fields
+                            var fullName = document.querySelector('input[name="fullName"]').value;
+                            var email = document.querySelector('input[name="email"]').value;
+
+                            // Display a confirmation message
+                            var message = "Thank you, " + fullName + "! Your email has been submitted.";
+                            document.getElementById("confirmationText").innerText = message;
+                            document.getElementById("confirmationBox").style.display = "block";
+                        }
+                    </script>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <h3>SecureTech</h3>
+                <p>Dedicated to delivering cutting-edge security solutions tailored to your unique needs, ensuring that your property and assets are protected at all times.</p>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com/securetechservicesph/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://securetech.com"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="https://youtube.com"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 SecureTech. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+}
+.main{
+    max-width: 100%;
+    height: 100%;
+    background:linear-gradient(to bottom, black, rgba(177, 165,165, 0)), url(img/contact-us.jpg);
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.705);
+    background-size: 100%;
+    margin-bottom: 0%;
+
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+    
+}
+.logo{
+    color: rgba(255, 255, 255, 0.959);
+    font-size: 35px;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    font-style: oblique;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+.nav{
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    height: 100%;
+    position: relative;
+}
+.nav ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;  
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    transition: 0.4s ease-in-out;
+}
+.nav ul li a:hover{
+    color:#c5ccd0;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1px;
+    margin-bottom: 0%;
+    max-width: 100%;
+    
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+   font-size: 36px;
+   font-weight: 200;
+   color: white;
+}
+.contact .content p {
+    font-weight: 300;
+    color: lightgray;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+   min-width: 60px;
+   height: 60px;
+   color: lightgray;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   font-size: 22px;
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: lightgray;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: white;
+}
+.contactForm{
+    bottom: 0;
+    margin-top: 0%;
+    width: 40%;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.692);
+    opacity: 100%;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contactForm h2{
+    font-size: 30px;
+    color: white;
+    font-weight: 200;
+}   
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    resize: none;   
+    color: black;
+    background-color: rgba(255, 255, 255, 0.932);
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: black;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: lightgray;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox button{
+    width: 100px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 35%;
+}
+.confirmation-box {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media (max-width: 991px){
+    .contact{
+        padding:50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container, .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container, .contactInfo, .contactForm{
+        width: 100%;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .ul{
+        width: 100%;
+        display: flex;
+    }
+    .nav{
+        width: 100%;
+        padding: 50px;
+    }
+    .logo{
+        display: flex;
+    
+    }
+}
+
+/*FOR FOOTER*/
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    padding-top: 4px;
+    color: #fff;
+    margin-top: 30%;
+    margin-bottom: 0%;
+}
+.footer-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    font-style: oblique;
+}
+.footer-content p{
+    max-width: 1000px;
+    margin: 0px auto;
+    line-height: 0px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: gray;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+/* @media screen and (max-device-width : 1000px) {
+    footer {
+    width: 100%;
+    position: relative;
+    }
+}
+@media screen and (max-device-width : 1000px) {
+    .footer-content .p {
+    width: 100%;
+    position: relative;
+    }
+} */
+@media (max-width: 880px) {
+
+    footer .footer-content,
+    footer .footer-bottom,
+    footer .footer-content h3,
+    footer .footer-content p{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    footer .socials i{
+        margin-left: 0;
+    }
+}

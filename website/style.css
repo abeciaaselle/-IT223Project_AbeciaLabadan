@@ -1,0 +1,863 @@
+/* *INDEX / HOME*
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+}
+.main{
+    max-width: 100%;
+    background: linear-gradient(to bottom, black,rgba(177, 165, 165, 0)),url(img/cctv1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    display: flex;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+    
+}
+.logo{
+    color: rgba(255, 255, 255, 0.959);
+    font-size: 35px;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    font-style: oblique;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+.nav{
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    height: 100%;
+    position: relative;
+}
+.nav ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;  
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    transition: 0.4s ease-in-out;
+}
+.nav ul li a:hover{
+    color:#c5ccd0;
+}*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'segoe ui', 'PingFang SC', 'Arial', 'Microsoft Yahei', 'Helvetica Neue', 'Helvetica', 'Tahoma', 'sans-serif';
+}
+
+.main {
+    max-width: 100%;
+    background: linear-gradient(to bottom, black, rgba(177, 165, 165, 0)), url(img/cctv1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    height: 75px;
+    margin: auto;
+    display: flex;
+}
+
+.icon {
+    width: 50px;
+    float: left;
+    height: 70px;
+}
+
+.logo {
+    color: rgba(255, 255, 255, 0.959);
+    font-size: 35px;
+    font-family: 'segoe ui', 'PingFang SC', 'Arial', 'Microsoft Yahei', 'Helvetica Neue', 'Helvetica', 'Tahoma', 'sans-serif';
+    font-style: oblique;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+
+.nav {
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    height: 100%;
+    position: relative;
+    margin-left: 10%;
+}
+
+.nav ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;  
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'segoe ui', 'PingFang SC', 'Arial', 'Microsoft Yahei', 'Helvetica Neue', 'Helvetica', 'Tahoma', 'sans-serif';
+    transition: 0.4s ease-in-out;
+}
+
+.nav ul li a:hover {
+    color: #c5ccd0;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-top: 5%;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        margin-top: 10rem;
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* .content{
+    width: 1200px;
+    height:auto;
+    margin: auto;
+    color: black;
+    position: relative;  
+}
+.content .description{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;    
+}
+.content .button {
+    width: 160px;
+    height: 40px;
+    background: white;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.content .button a{
+    text-decoration: none;
+    color: black;
+    transition: .3 ease;
+}
+.button:hover{
+    background-color: gray;
+}
+.content span{
+    color: white;
+    font-size: 60px;
+} */
+.content {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
+    color: white;
+    position: relative;
+}
+
+.content .description {
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: 'segoe ui', 'PingFang SC', 'Arial', 'Microsoft Yahei', 'Helvetica Neue', 'Helvetica', 'Tahoma', 'sans-serif';
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1 {
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .button {
+    width: 160px;
+    height: 40px;
+    background: white;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s ease;
+
+}
+
+.content .button a {
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+
+.button:hover {
+    background-color: gray;
+}
+
+.content span {
+    color: white;
+    font-size: 60px;
+}
+
+/* Media Query for screens with a width of 1000px or less */
+@media (max-width: 1000px) {
+    .content {
+        width: 100%;
+        padding: 0 20px;
+        align-items: center;
+    }
+
+    .content h1 {
+        font-size: 40px;
+        margin-top: 20%;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .content p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .content .button {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*POPULAR PRODUCT / INDEX-HOME*/
+.prod-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pop-prod-header{
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+.cards{
+    width: 300px;
+    margin: 10px;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+.card-img img{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 10px 0px 0px;
+    transition: 0.5s all ease-in-out;
+}
+.card-img img:hover{
+    transform: scale(1.1);
+
+}
+.card-body h4{
+    text-align: center;
+    align-items: center;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    font-weight: light;
+}
+.card-body p{
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    font-weight: light;
+    letter-spacing: 1;
+}
+.card-body-title{
+    padding-top:10px;
+}
+.card-body{
+    text-align: justify;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.pop-prod-btn{
+    display: flex;
+    justify-content: center;
+    list-style: inline;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.pop-prod-btn button {
+    width: 160px;
+    height: 40px;
+    background: black;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.pop-prod-btn button a{
+    text-decoration: none;
+    transition: .3 ease;
+    color: white;
+}
+.pop-prod-btn button:hover{
+    background-color:gray;
+    color: black;
+}
+/**SECURETECH DETAILS TO SERVICES HOME/INDEX**/
+.details-container{
+    width: 100%;
+    height: 100%;
+    background-color: #c5ccd03a;
+    padding: 100px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.details-container-content{
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    letter-spacing: 1;
+    padding-top: 20px;
+}
+.details-container-content .p1{
+    color: black;
+    font-size: 35px;
+    font-style: oblique;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+.details-container-content .p2{
+    font-size: 25px;
+    padding-top: 10px;
+}
+.details-container-content .p3{
+    font-size: 15px;
+    padding-top: 10px;
+}
+.details-container-content button {
+    width: 160px;
+    height: 40px;
+    margin-top: 15px;
+    background: black;
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.details-container-content button a{
+    text-decoration: none;
+    transition: .3 ease;
+    color: white;
+}
+.details-container-content button:hover{
+    background-color: gray;
+    color: black;
+}
+/*SECURETECT DETAILS ICONS HOME/INDEX**/
+.icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    position:absolute;
+    width: 100%;
+    height: 200px;
+    margin: 200px auto;
+    background-color: #c5ccd03a;
+    margin-top: 0px;
+    padding-left: 40px;
+    padding-right: 50px;
+    justify-content: center;
+}
+.icons-container .box{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.452);
+    float: left;
+    align-items: center;
+    margin-left: 5rem;
+    margin-right: 50px;
+    margin-top: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid rgba(20, 2, 2, 0.199);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    bottom: 10%;
+}
+.icons-container .box .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.icons-container .box:hover .icon{
+    top: calc(-50%);
+    width: 20px;
+    height: 20px;
+}
+.icons-container .box .icon .bi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    transition: 0.10s;
+}
+.icons-container .box .icon-content{
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    padding: 10px;
+    transition: 0.5s;
+    opacity: 0;
+}
+.icons-container .box:hover .icon-content{
+    top: 20px;
+    opacity: 5;
+} 
+@media (max-width: 1000px) {
+    .details-container {
+        width: 100%;
+    }
+    .details-container-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%;
+    }
+    .icons-container .box{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}
+/**FOOTER**/
+/* footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    padding-top: 4px;
+    color: #fff;
+    margin-top: 10%;
+    margin-bottom: 0%;
+}
+.footer-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    font-style: oblique;
+}
+.footer-content p{
+    max-width: 1000px;
+    margin: 0px auto;
+    line-height: 0px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: gray;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+@media (max-width:1000px) {
+  .footer-content{
+    margin-bottom: 0;
+    width: 100%;
+    text-align: justify;
+  }
+  .footer ul{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+} */
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: 'segoe ui', 'PingFang SC', 'Arial', 'Microsoft Yahei', 'Helvetica Neue', 'Helvetica', 'Tahoma', 'sans-serif';
+    padding-top: 4px;
+    color: #fff;
+    margin-top: 30%;
+    margin-bottom: 0%;
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+    font-family: 'segoe ui', 'PingFang SC', 'Arial', 'Microsoft Yahei', 'Helvetica Neue', 'Helvetica', 'Tahoma', 'sans-serif';
+    font-style: oblique;
+}
+
+.footer-content p {
+    max-width: 1000px;
+    margin: 0px auto;
+    line-height: 0px;
+    font-size: 14px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: gray;
+}
+
+.footer-bottom {
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+/* Media Query for screens with a width of 1000px or less */
+@media (max-width: 1500px) {
+    .footer-content p {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-content{
+        width: 100%;
+        position: relative;
+    }
+} 
+
+/**ABOUT US**/
+body {
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    margin: 0;
+  }
+  
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+.about-column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    transition: 0.5s all ease-in-out;
+  }
+
+.about-column:hover{
+    transform: scale(1.1);
+}
+.about-main{
+    max-width: 100%;
+    background: linear-gradient(to bottom, black,rgba(177, 165, 165, 0)),url(img/about.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.about-navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.about-icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+    
+}
+.about-logo{
+    color: rgba(255, 255, 255, 0.959);
+    font-size: 35px;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    font-style: oblique;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+.about-nav{
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    height: 100%;
+    position: relative;
+}
+.about-nav ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-nav ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;  
+}
+.about-nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    transition: 0.4s ease-in-out;
+}
+.about-nav ul li a:hover{
+    color:#c5ccd0;
+}
+.about-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    align-items: center;
+    margin-top: 5%;
+    background-color: rgba(0, 0, 0, 0.699);
+    border-radius: 10px;
+    padding-top: 5%;
+    margin-top: 5%;
+  }
+.about-card img{
+    padding-left: 45%;
+    height: 50px;
+}
+.about-section {
+    padding: 10%;
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+}
+.about-section h1{
+    text-align: center;
+    font-weight: 200;
+}
+.about-section p{
+    font-weight: light;
+}
+.about-container {
+    padding: 20px;
+    list-style-image: inline;
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+}
+.about-container h2{
+    text-align: center;
+}
+.about-container-p{
+    text-align: center;
+}
+.about-container::after, .row::after {
+    clear: both;
+    display: table;
+    list-style-image: inline;
+  }
+@media screen and (max-width: 1000px) {
+    .about-column {
+      width: 75%;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+     }
+     .about-card{
+        width: 75%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+     }
+     .about-main{
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+     }
+     .about-container{
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+     }
+     .about-section{
+      justify-content: center;
+      text-align: center;
+     }
+    
+
+}
+@media screen and (max-width: 1000px) {
+    .about-navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-logo {
+        margin-top: 5%;
+    }
+
+    .about-nav ul {
+        flex-direction: column;
+        margin-top: 10rem;
+    }
+
+    .about-nav ul li {
+        margin: 10px 0;
+    }
+}
+
+  
