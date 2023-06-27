@@ -1,0 +1,306 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+}
+.main{
+  max-width: 100%;
+  display: flex;
+  height: 100%;
+  background:black;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: 0%;
+}
+.navbar{
+  width: 1200px;
+  height: 75px;
+  margin: auto;
+}
+.icon{
+  width: 200px;
+  float: left;
+  height: 70px;
+  
+}
+.logo{
+  color: rgba(255, 255, 255, 0.959);
+  font-size: 35px;
+  font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+  font-style: oblique;
+  padding-left: 20px;
+  float: left;
+  padding-top: 10px;
+  margin-top: 15px;
+}
+.nav{
+  align-items: center;
+  display: flex;
+  font-weight: 600;
+  height: 100%;
+  position: relative;
+}
+.nav ul{
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav ul li{
+  list-style: none;
+  margin-left: 62px;
+  margin-top: 27px;
+  font-size: 14px;  
+}
+.nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+  transition: 0.4s ease-in-out;
+}
+.nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #c5ccd0;
+  transition: width 0.4s ease-in-out;
+}
+
+.navbar ul li a.active { 
+  border-bottom: 2px solid  #c5ccd0;
+}
+
+.nav ul li a:hover{
+  color:#c5ccd0;
+}
+.header {
+  padding: 50px;
+  position: relative;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+  font-size: 36px;
+  color: black;
+}
+.header h2{
+  font-weight: 10;
+  text-align: center;
+
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+  text-align: justify;
+}
+
+/* Add a card effect for articles */
+.card{
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid rgba(20, 2, 2, 0.199);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card .blog-img{
+  padding-left: 1%;
+  width: 100%;
+}
+.card .blog-img1{
+  padding-left: 1%;
+}
+.card .socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.card .socials li{
+  margin: 0 10px;
+}
+.card .socials a{
+  text-decoration: none;
+  color: black;
+}
+.card .socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+
+}
+.card .socials a:hover i{
+  color: darkgray;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .nav ul {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 0;
+    padding-left: 10px;
+  }
+
+  .nav ul li {
+    margin: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav ul li {
+    font-size: 12px;
+  }
+}
+footer{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100%;
+  font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+  padding-top: 4px;
+  color: #fff;
+  margin-top: 30%;
+  margin-bottom: 0%;
+}
+.footer-content{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem;
+  font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+  font-style: oblique;
+}
+.footer-content p{
+  max-width: 1000px;
+  margin: 0px auto;
+  line-height: 0px;
+  font-size: 14px;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color: gray;
+}
+
+.footer-bottom{
+  background: #000;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;
+    display: block;
+}
+}
+@media (max-width:1000px) {
+.footer-menu ul{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.footer-bottom{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.blog-img{
+  display: flex;
+}
+}
+@media screen and (max-width: 1000px) {
+  main {
+    width: 90%;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 0.9rem;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    width: 95%;
+  }
+  
+  h1 {
+    font-size: 1.2rem;
+  }
+  
+  p {
+    font-size: 0.8rem;
+  }
+
+}

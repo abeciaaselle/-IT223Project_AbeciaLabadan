@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
+
+
+body{
+  background: url('http://all4desktop.com/data_images/original/4236532-background-images.jpg');
+  font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+  margin: 0;
+  background-color: rgba(16, 14, 14, 0.162);
+ 
+}
+.back{
+    float: left;
+    
+}
+.back a{
+    float: left;
+    margin-left: 1rem;
+    color: black;
+    margin-top: 45%;
+    text-decoration: none;
+}
+.back i {
+  font-size: 1.5rem; 
+}
+
+@media (min-width: 500px)
+{
+  .container{
+    max-width: 1000px;
+  }
+}
+.d-flex{
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px 5px 5px 5px;
+  padding: 25px;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(91,91,99,1) 84%, rgba(171,174,175,1) 100%);  max-width: 800px; /* Set the desired maximum width */
+  margin: 20px auto; 
+  
+}
+form{
+  flex: 1.5;
+}
+.Yorder{
+  flex: 1;
+}
+.title{
+  font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+  border-radius:5px 5px 0 0 ;
+  padding: 20px;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+h2{
+  margin: 0;
+  padding-left: 15px; 
+}
+.required{
+  color: red;
+}
+label,
+table {
+  display: flex;
+  margin: 15px;
+  flex-wrap: wrap;
+  color: white;
+}
+
+label>span {
+  float: left;
+  width: 100%;
+  margin-top: 12px;
+  padding-right: 10px;
+  font-size: 15px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+  width: 100%;
+  height: 30px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #0000007b;
+  color: #000000;
+}
+
+select {
+  width: 100%;
+  height: 45px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+.Yorder{
+  margin-top: 10rem;
+  height: 647px;
+  padding-left: 10px;
+  padding-right: 0;
+  border: 1px solid #ffffff29;
+  background-color: rgba(0, 0, 0, 0.49);
+  border-radius: 15px;
+  opacity: 95%;
+  color: white;
+  position: relative;
+  margin: 0;
+
+}
+.payment-method {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+}
+
+.payment-method label {
+  margin-bottom: 10px;
+}
+
+.payment-method input[type="radio"] {
+  margin-right: 5px;
+}
+
+
+
+table{
+  margin: 0;
+  padding: 0;
+}
+th{
+  border-bottom: 1px solid #dadada;
+  padding: 10px;
+  font-size: 15px;
+  width: 100%;
+  color: white;
+  text-align: center;
+
+}
+tr>td:nth-child(1){
+  text-align: left;
+  color: white;
+  font-size: 13px;
+  padding-left: 5px;
+
+}
+tr>td:nth-child(2){
+  text-align: right;
+  color: #f6f6f6;
+  padding-right: 150px;
+}
+td{
+  border-bottom: 1px solid #dadada50;
+  padding: 25px 25px;
+  font-size: 13px;
+}
+p{
+  display: block;
+  color: #888888;
+  font-size: 12px;
+  margin: 0;
+  padding-left: 25px;
+}
+.Yorder>div{
+  padding: 15px 0; 
+  font-size: 13px;
+  
+}
+
+button{
+  width: 50%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background: white;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button:hover{
+  cursor: pointer;
+  background: #f8fdfcb7;
+  
+}
+footer{
+    position:relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    padding-top: 4px;
+    color: #fff;
+    margin-top: 30%;
+    margin-bottom: 0rem;
+}
+.footer-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    font-style: oblique;
+}
+.footer-content p{
+    max-width: 1000px;
+    margin: 0px auto;
+    line-height: 0px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: gray;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+/* @media screen and (max-device-width : 1000px) {
+    footer {
+    width: 100%;
+    position: relative;
+    }
+}
+@media screen and (max-device-width : 1000px) {
+    .footer-content .p {
+    width: 100%;
+    position: relative;
+    }
+} */
+@media (max-width: 880px) {
+
+    footer .footer-content,
+    footer .footer-bottom,
+    footer .footer-content h3,
+    footer .footer-content p{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    footer .socials i{
+        margin-left: 0;
+    }
+}
+    /* CSS for the popup */
+    /* CSS for the popup */
+    .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+  
+    .popup-content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+      width: 400px;
+      display: flex; /* Center the content vertically */
+      flex-direction: column; /* Arrange the content in a column */
+      align-items: center; /* Center the content horizontally */
+    }
+
+    .popup-content h2 {
+      color: black;
+      font-size: 24px;
+      text-align: center;
+    }
+@media (max-width: 880px) {
+      .d-flex {
+        flex-direction: column;
+      }
+      
+      .Yorder {
+        margin-top: 0;
+        margin-bottom: 2rem;
+      }
+    }

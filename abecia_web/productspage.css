@@ -1,0 +1,1033 @@
+*{
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background-color: rgba(8, 7, 7, 0.014);
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+}
+.main{
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin-top: 0;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    font-style: oblique;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+.nav{
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    height: 100%;
+    position: relative;
+}
+.navbar{
+    background-color: black;
+    width: 100%;
+}
+.nav ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;  
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    transition: 0.4s ease-in-out;
+    position: relative;
+}
+.nav ul li a:hover{
+    color:#c5ccd0;
+}
+.nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #c5ccd0;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  .nav ul li a.active::after {
+    width: 100%;
+  }
+.search-form{
+    position: absolute;
+    border: 0px solid;
+    top: 50%;
+    margin-left: 70%;
+    width: 20rem;
+    height: 2.2rem;
+    background: white;
+    color: black;
+    border-radius: .3rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+.search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0.1rem;
+    color: black;
+}
+.search-form label{
+    font-size: 1rem;
+    padding-right: .5rem;
+    color: var(--black);
+    cursor: pointer;  
+}
+.prod-icons{
+    color: white;
+    width: 35rem;
+    height: 1rem;
+    font-size: 2.2rem;
+    position: absolute;
+    margin-left: 90%; 
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    column-gap: 1rem;
+
+}
+.prod{
+    max-width: 100%;
+    height: 60vh;
+    background: linear-gradient(to bottom, black, rgba(177, 165, 165, 0)), url(img/prod-bg.jpg); height:550px; width: 100%;
+}
+.prod h3{
+    font-size:small;
+    color: white;
+    font-family: 'segoe ui', 'PingFang SC', 'Arial', 'Microsoft Yahei', 'Helvetica Neue', 'Helvetica', 'Tahoma', 'sans-serif';
+    font-size: 50px;
+    padding-left: 30px;
+    padding-top: 20vh;
+    letter-spacing: 2px;
+}
+.prod p{
+    padding-left: 30px;
+    padding-bottom: 25px;
+    font-family: 'segoe ui', 'PingFang SC', 'Arial', 'Microsoft Yahei', 'Helvetica Neue', 'Helvetica', 'Tahoma', 'sans-serif';
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    color: white;
+    font-size: large;
+}
+.prod .btn {
+    width: 160px;
+    height: 40px;
+    background: white;
+    color: black;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .4s ease;
+
+}
+
+.prod .btn a {
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+
+.btn:hover {
+    background-color:#c5ccd0;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+    transition: 0.5s;
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.container img {
+    max-width: 100%;
+    height: auto;
+  }
+.prod-icons .shopping {
+    color: white;
+    height: 1rem;
+    font-size: 2rem;
+    position: relative;
+    transform: translateY(-90%);
+    
+}
+.prod-icons .shopping span {
+    background: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 1px 6px;
+    font-size: 1.3rem;
+    transform: translateX(-50%);
+    float: right;
+}
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.stars {
+    font-size: 24px;
+    color: rgb(255, 255, 0); 
+    margin-bottom: 10px;
+}
+
+.list .preview .products-stars {
+    padding: 1rem 0;
+    font-size: 1.7rem;
+}
+
+.list .preview .products-stars i {
+    color: rgb(223, 204, 39);
+}
+
+.list .item {
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.247);
+}
+
+.list .item img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.list .item .title {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.list .item .price {
+    margin: 10px;
+    font-size: 12px;
+}
+
+.list .item button {
+    background-color: black;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+}
+
+.card{
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 500px;
+    background-color: #000000fe;
+    height: 100vh;
+    transition: 0.5s;
+    font-size: 15px;
+}
+.active .card{
+    left: calc(100% - 500px);
+}
+.active .container{
+   transform: translateX(-200px);
+}
+.card .bi-x{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    color: white;
+    font-size: 4rem;
+}
+.card h1{
+    color: white;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.card .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-height: 400px;
+    overflow-y: auto;
+
+}
+.card .checkOut div{
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border:1px solid black;
+    font-size: 12px;
+}
+.card .checkOut div:nth-child(2):hover{
+    background-color: rgba(244, 244, 244, 0.455);
+    color: black;
+}
+.card .checkOut div:nth-child(2){
+    background-color: white;
+    color: black;
+    border:1px solid black;
+}
+.checkOut .closeShopping a{
+    text-decoration: none;
+    color: black;
+}
+.listCard {
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .listCard li {
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+    padding: 10px;
+  }
+  
+  .listCard li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .listCard li img {
+    width: 90%;
+  }
+  
+  .listCard li button {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+  }
+  
+  .listCard .count {
+    margin: 0 10px;
+  }
+
+footer{
+    position: absolute;
+    margin-bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    padding-top: 4px;
+    color: #fff;
+    margin-top: 30%;
+    margin-bottom: 0%;
+    
+}
+.footer-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    font-style: oblique;
+}
+.footer-content p{
+    max-width: 1000px;
+    margin: 0px auto;
+    line-height: 0px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: gray;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+  
+@media only screen and (max-width: 1000px) {
+    .navbar .icon {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar .icon h2 {
+        text-align: center;
+        font-size: 25px;
+        margin: 0;
+    }
+
+    .navbar .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav ul {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .navbar .search-form {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .navbar .prod-icons {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .prod {
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pagination {
+        justify-content: center;
+    }
+
+    .footer-content {
+        text-align: center;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+  
+  .pagination a {
+    color: black;
+    font-size: 150%;
+    padding: 8px 16px;
+    text-decoration: none;
+    justify-content: center;
+    transition: background-color .3s;
+  } 
+  .pagination a.active {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Add a grey background color on mouse-over 
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  *{
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background-color: rgba(8, 7, 7, 0.014);
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+}
+.main{
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin-top: 0;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    font-style: oblique;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+.nav{
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    height: 100%;
+    position: relative;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin-top: 0;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    font-style: oblique;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+.nav{
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    height: 100%;
+    position: relative;
+}
+.navbar{
+    background-color: black;
+    width: 100%;
+}
+.nav ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;  
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    transition: 0.4s ease-in-out;
+    position: relative;
+}
+.nav ul li a:hover{
+    color:#c5ccd0;
+}
+.nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #c5ccd0;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  .nav ul li a.active::after {
+    width: 100%;
+  }
+.search-form{
+    position: absolute;
+    border: 0px solid;
+    top: 50%;
+    margin-left: 70%;
+    width: 20rem;
+    height: 2.2rem;
+    background: white;
+    color: black;
+    border-radius: .3rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+.search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0.1rem;
+    color: black;
+}
+.search-form label{
+    font-size: 1rem;
+    padding-right: .5rem;
+    color: var(--black);
+    cursor: pointer;  
+}
+.prod-icons{
+    color: white;
+    width: 35rem;
+    height: 1rem;
+    font-size: 2.2rem;
+    position: absolute;
+    margin-left: 90%; 
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    column-gap: 1rem;
+
+}
+.prod{
+    max-width: 100%;
+    height: 60vh;
+    background: linear-gradient(to bottom, black, rgba(177, 165, 165, 0)), url(img/prod-bg.jpg); height:550px; width: 100%;
+}
+.prod h3{
+    font-size:small;
+    color: white;
+    font-family: 'segoe ui', 'PingFang SC', 'Arial', 'Microsoft Yahei', 'Helvetica Neue', 'Helvetica', 'Tahoma', 'sans-serif';
+    font-size: 50px;
+    padding-left: 30px;
+    padding-top: 20vh;
+    letter-spacing: 2px;
+}
+.prod p{
+    padding-left: 30px;
+    padding-bottom: 25px;
+    font-family: 'segoe ui', 'PingFang SC', 'Arial', 'Microsoft Yahei', 'Helvetica Neue', 'Helvetica', 'Tahoma', 'sans-serif';
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    color: white;
+    font-size: large;
+}
+.prod .btn {
+    width: 160px;
+    height: 40px;
+    background: white;
+    color: black;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .4s ease;
+
+}
+
+.prod .btn a {
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+
+.btn:hover {
+    background-color:#c5ccd0;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+    transition: 0.5s;
+}
+.prod-icons .shopping {
+    color: white;
+    height: 1rem;
+    font-size: 2rem;
+    position: relative;
+    transform: translateY(-90%);
+    
+}
+.prod-icons .shopping span {
+    background: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 1px 6px;
+    font-size: 1.3rem;
+    transform: translateX(-50%);
+    float: right;
+}
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.stars {
+    font-size: 24px;
+    color: rgb(255, 255, 0); 
+    margin-bottom: 10px;
+}
+
+.list .preview .products-stars {
+    padding: 1rem 0;
+    font-size: 1.7rem;
+}
+
+.list .preview .products-stars i {
+    color: rgb(223, 204, 39);
+}
+
+.list .item {
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.247);
+}
+
+.list .item img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.list .item .title {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.list .item .price {
+    margin: 10px;
+    font-size: 12px;
+}
+
+.list .item button {
+    background-color: black;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+}
+
+.card{
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 500px;
+    background-color: #000000fe;
+    height: 100vh;
+    transition: 0.5s;
+    font-size: 15px;
+}
+.active .card{
+    left: calc(100% - 500px);
+}
+.active .container{
+   transform: translateX(-200px);
+}
+.card .bi-x{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    color: white;
+    font-size: 4rem;
+}
+.card h1{
+    color: white;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.card .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-height: 400px;
+    overflow-y: auto;
+
+}
+.card .checkOut div{
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border:1px solid black;
+    font-size: 12px;
+}
+.card .checkOut div:nth-child(2):hover{
+    background-color: rgba(244, 244, 244, 0.455);
+    color: black;
+}
+.card .checkOut div:nth-child(2){
+    background-color: white;
+    color: black;
+    border:1px solid black;
+}
+.checkOut .closeShopping a{
+    text-decoration: none;
+    color: black;
+}
+.listCard {
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .listCard li {
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+    padding: 10px;
+  }
+  
+  .listCard li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .listCard li img {
+    width: 90%;
+  }
+  
+  .listCard li button {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+  }
+  
+  .listCard .count {
+    margin: 0 10px;
+  }
+  
+footer{
+    position: absolute;
+    margin-bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    padding-top: 4px;
+    color: #fff;
+    margin-top: 30%;
+    margin-bottom: 0%;
+    
+}
+.footer-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+    font-family: 'segoe ui', 'PingFang SC' , 'Arial' , 'Microsoft Yahei' , 'Helvetica Neue' , 'Helvetica' , 'Tahoma' , 'sans-serif';
+    font-style: oblique;
+}
+.footer-content p{
+    max-width: 1000px;
+    margin: 0px auto;
+    line-height: 0px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: gray;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+  
+  .pagination a {
+    color: black;
+    font-size: 150%;
+    padding: 8px 16px;
+    text-decoration: none;
+    justify-content: center;
+    transition: background-color .3s;
+  }
+  .pagination a.active {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Hover */
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  @media (max-width: 1000px) {
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .list li {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
